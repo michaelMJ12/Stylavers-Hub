@@ -1,0 +1,138 @@
+.product-section-container {
+  padding: 4rem 2rem;
+}
+
+.product-section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-images-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
+  gap: 1.5rem;
+}
+
+.product-image-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.product-item {
+  position: relative;
+  width: fit-content;
+}
+
+.product-item.small img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.product-item.large {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.product-item.large img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.product-image-wrapper {
+  position: relative;
+}
+
+.product-label {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.product-content-column {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-content-column h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.product-content-column h4 {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.product-start-button {
+  background-color: #FFB800;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-start-button:hover {
+  background-color: #e6a700;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .product-section-inner {
+    flex-direction: row-reverse; /* Show images on the right */
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .product-content-column {
+    flex: 1;
+    padding-right: 2rem;
+    text-align: left;
+  }
+
+  .product-images-column {
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+  }
+
+  .product-image-group {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-item.small img,
+  .product-item.large img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product-section-inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .product-images-column,
+  .product-image-group {
+    align-items: center;
+  }
+}

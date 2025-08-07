@@ -1,0 +1,254 @@
+/* styles/Analysis.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* height: 100%; */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.analysis-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.analysis-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.analysis-header select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.analytics-title {
+  margin-right: 150px;
+}
+
+
+.metrics-cards {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+
+.metric-card {
+  background-color: #ffffff;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 280px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.stat-icon {
+  font-size: 2rem;
+  color: #4b13b0;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.stat-label {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #7f8c8d;
+}
+
+.graph-card {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  width: 90%;
+}
+
+.graph-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.dual-graph-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.dual-graph-card {
+  flex: 1;
+  min-width: 350px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.dual-graph-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: #f39c12;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card-icon:hover {
+  transform: scale(1.2);
+}
+
+.sales-insights {
+  margin-top: 3rem;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .card-row,
+  .dual-graph-row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .analysis-header {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .stat-card,
+  .dual-graph-card {
+    min-width: 100%;
+  }
+
+
+
+
+  .graph-card {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    width: 80%;
+  }
+
+
+  .metrics-cards {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-right: 100px;
+  }
+
+
+  .metric-card {
+    background-color: #ffffff;
+    width: 300px;
+    height: 130px;
+    margin-bottom: 0.25px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+
+  .analysis-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+
+  }
+
+
+  .date-range {
+    margin-right: 100px;
+  }
+
+
+  .analytics-title {
+    margin-right: 100px;
+  }
+
+
+
+}

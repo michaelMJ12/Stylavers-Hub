@@ -1,0 +1,190 @@
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background video settings */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Show/hide based on screen size */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+/* Responsive switch for mobile video */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+
+/* Overlay content centered in the middle */
+.video-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  text-align: left;               
+  color: white;
+  height: 100%;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  max-width: 600px;
+  flex: 1;
+}
+
+/* Keep these styles as-is */
+.headline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.headline-list li {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0.4rem 0;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #ffffff;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #FFB800;
+  color: #F9F9F9;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .video-overlay {
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem 1rem;
+    text-align: center;
+    padding-top: 340px;
+  }
+
+  .overlay-content {
+    align-items: left;
+    text-align: left;
+  }
+
+  .headline-list li {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+}
+
+/* Floating-like neumorphic box area */
+
+ .neumorphic-box {
+  background-color: #F9F9F9;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.1),
+              -6px -6px 14px rgba(255, 255, 255, 0.7);
+  min-width: 220px;
+  flex-shrink: 0;
+  text-align: center;
+  margin: 1rem 0.75rem; /* space between items */
+  display: inline-block;
+}
+
+.box-item {
+  background-color: #fff;
+  color: black;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.05),
+              inset -2px -2px 6px rgba(255, 255, 255, 0.7);
+}
+
+.box-item:hover{
+    background-color: #E6E6F9;
+}
+
+/* Container styling to wrap inline boxes like nav */
+.neumorphic-row {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1rem 2rem;
+  background-color: #F9F9F9;
+  box-sizing: border-box;
+  text-align: center; /* or left if preferred */
+}
+
+/* Optional scrollbar styling */
+.neumorphic-row::-webkit-scrollbar {
+  height: 6px;
+}
+.neumorphic-row::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .neumorphic-row {
+    padding: 1rem;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .neumorphic-box {
+    display: block;
+    width: 90%;
+    margin: 0.5rem 0;
+  }
+}
+
+

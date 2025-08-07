@@ -1,0 +1,213 @@
+:root {
+  --primary-color: #4b13b0;
+  --secondary-color: #6c5ce7;
+  --background-color: #f7f8fc;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --text-color: #1e1e2f;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --border-radius: 1rem;
+  --gradient: linear-gradient(135deg, #a29bfe, #6c5ce7);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.listing-container {
+  max-width: 1200px;
+  margin-left: 70px;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.login-button,
+.create-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.login-button {
+  background: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.login-button:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.create-button {
+  background: var(--gradient);
+  color: white;
+  border: none;
+}
+
+.create-button:hover {
+  transform: scale(1.05);
+}
+
+.listing-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.listing-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.listing-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.dropdown {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.listing-table-card {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.listing-card-header {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.listing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.listing-table thead {
+  background: var(--primary-color);
+  color: white;
+}
+
+.listing-table th,
+.listing-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.listing-table tbody tr:hover {
+  background: #f1edff;
+  transition: 0.3s;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.pagination-button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination-button:hover {
+  background: var(--secondary-color);
+}
+
+.pagination-button.active {
+  background: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .listing-container {
+    padding: 1rem;
+  }
+
+  .listing-controls {
+    flex-direction: column;
+  }
+
+  .login-button,
+  .create-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .listing-title {
+    font-size: 1.5rem;
+  }
+
+  .listing-table th,
+  .listing-table td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .pagination-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .login-button,
+  .create-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}

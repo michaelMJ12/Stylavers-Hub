@@ -1,0 +1,144 @@
+.main-content{
+  margin-top: 70px;
+}
+
+.upgrades-background {
+  /* background-image: url('https://your-image-url.com/background.jpg');  */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.upgrades-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.upgrade-card {
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(250, 248, 248, 0.85); /* Allow background image to show */
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background-blend-mode: overlay;
+}
+
+
+.upgrade-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.upgrade-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.upgrade-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+}
+
+.upgrade-text {
+  flex: 1;
+}
+
+.upgrade-button {
+  padding: 10px 20px;
+  background-color: #4b13b0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.upgrade-button:hover {
+  background-color: #3a0f87;
+}
+
+.upgrade-image {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.upgrade-icon-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f8f8;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.upgrade-icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upgrade-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.icon-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* ✅ Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .upgrades-background {
+    padding: 20px 10px;
+  }
+
+  .main-content{
+    margin-left:80px;
+    margin-right:20px;
+  }
+
+  .upgrade-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .upgrade-image {
+    max-width: 80%;
+    margin-top: 10px;
+  }
+
+  .upgrade-button {
+    width: 100%;
+  }
+
+  .upgrade-icon-link {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .upgrade-card {
+    max-width: 100%;
+  }
+}

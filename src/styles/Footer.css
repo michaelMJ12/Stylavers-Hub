@@ -1,0 +1,161 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-logo {
+  max-width: 180px;
+}
+
+.newsletter {
+  flex: 1;
+  min-width: 280px;
+}
+
+.newsletter p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.newsletter button {
+  background-color: #FFB800;
+  border: none;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter button:hover {
+  background-color: #e6a700;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.footer-links h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #FFB800;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-media {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-media a {
+  color: #FFB800;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;         /* Allows links to wrap if needed */
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin-right: 1rem;
+}
+
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 1rem;
+  white-space: nowrap;     /* Prevent breaking into 2 lines */
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+
+/* .footer-bottom {
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+}
+
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 1rem;
+  display: flex;
+  float: left;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+} */

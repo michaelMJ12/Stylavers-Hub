@@ -1,0 +1,97 @@
+/* global.css or index.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color:#121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;  
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10001; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #F9F9F9;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color:#4B13B0;
+}
+
+.nav-logo {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.start-btn-hover:hover {
+  color: #000000 !important; 
+}
+
+
+/* hamburger icon (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #4B13B0;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  /* show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* hide links by default */
+  .nav-links {
+    position: absolute;
+    top: 90px;      /* height of navbar */
+    left: 0;
+    right: 0;
+    background-color: #121111;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+    
+  }
+
+  /* when toggled open */
+  .nav-links.show {
+    display: flex;
+  }
+
+  /* make each link full-width to tap easily */
+  .nav-links .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}

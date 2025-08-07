@@ -1,0 +1,92 @@
+.social-section {
+  background-color: #f3f4f6;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .social-section {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.social-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.social-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.social-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.social-icons > div {
+  padding: 0.75rem;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.facebook { background-color: #1877f2; }
+.instagram { background-color: #e1306c; }
+.twitter { background-color: #1da1f2; }
+.youtube { background-color: #ff0000; }
+.tiktok { background-color: #000000; }
+.linkedin { background-color: #0077b5; }
+
+.social-connect-inputs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Makes it responsive on small screens */
+  margin-top: 1rem;
+}
+
+.social-input {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color:  #d6d6f8;
+  color: #1f2937;
+  border: none;
+  outline: none;
+  
+}
+
+.social-submit {
+  padding: 0.5rem 1.5rem;
+  background-color: #FFB800;
+  color: #1f2937;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.social-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.social-image {
+  max-width: 100%;
+  height: auto;
+}

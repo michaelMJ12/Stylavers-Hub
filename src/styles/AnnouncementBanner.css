@@ -1,0 +1,55 @@
+.announcement-banner {
+  background-color: #F9F9F9;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: #000000;
+  width: 100vw;
+  margin: 0; 
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative; 
+}
+
+.announcement-banner h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FFB800;
+}
+
+.announcement-banner p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #FFB800;
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
+  .announcement-banner {
+    padding: 1rem 1.25rem;
+    height: 130px;
+  }
+
+  .announcement-banner h3 {
+    font-size: 1.1rem;
+  }
+
+  .announcement-banner p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-banner {
+    padding: 0.75rem 1rem;
+  }
+
+  .announcement-banner h3 {
+    font-size: 1rem;
+  }
+
+  .announcement-banner p {
+    font-size: 0.9rem;
+  }
+}
