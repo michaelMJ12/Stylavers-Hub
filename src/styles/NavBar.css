@@ -1,15 +1,14 @@
-/* global.css or index.css */
+
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* Navbar Styles */
 .navbar {
   background-color:#121212;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   padding: 0 2rem;
   position: fixed;
@@ -22,12 +21,13 @@ html, body {
   z-index: 10001; 
 }
 
-.nav-links {
+.nav-linksP {
   display: flex;
   gap: 1.5rem;
+  
 }
 
-.nav-link {
+.nav-linkP {
   color: #F9F9F9;
   text-decoration: none;
   font-weight: 500;
@@ -51,7 +51,7 @@ html, body {
 }
 
 
-/* hamburger icon (hidden on desktop) */
+
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -59,17 +59,15 @@ html, body {
   color: #4B13B0;
 }
 
-/* Mobile breakpoint */
+
 @media (max-width: 768px) {
-  /* show hamburger */
   .menu-toggle {
     display: block;
   }
 
-  /* hide links by default */
+  
   .nav-links {
     position: absolute;
-    top: 90px;      /* height of navbar */
     left: 0;
     right: 0;
     background-color: #121111;
@@ -83,12 +81,12 @@ html, body {
     
   }
 
-  /* when toggled open */
+  
   .nav-links.show {
     display: flex;
   }
 
-  /* make each link full-width to tap easily */
+  
   .nav-links .nav-link {
     width: 100%;
     text-align: center;

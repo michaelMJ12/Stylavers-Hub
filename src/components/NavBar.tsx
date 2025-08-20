@@ -16,14 +16,14 @@ const NavBar: React.FC = () => {
         {menuOpen ? '✕' : '☰'}
       </div>
 
-      <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
-        <a href="/" className="nav-link">How it works</a>
-        <a href="/about" className="nav-link">Discover creators</a>
-        <a href="/social" className="nav-link">Social integrations</a>
-        <a href="/costume" className="nav-link">Custom stores</a>
+      <div className={`nav-linksP ${menuOpen ? 'show' : ''}`}>
+        <a href="/" className="nav-linkP">How it works</a>
+        <a href="/about" className="nav-linkP">Discover creators</a>
+        <a href="/social" className="nav-linkP">Social integrations</a>
+        <a href="/costume" className="nav-linkP">Custom stores</a>
         <a
           href="#start-creating"
-          className="nav-link start-btn-hover"
+          className="nav-linkP start-btn-hover"
           style={{
             backgroundColor: '#FFB800',
             color: '#4B13B0',
@@ -37,7 +37,7 @@ const NavBar: React.FC = () => {
         >
           Start creating
         </a>
-        <a href="#login" className="nav-link">Login</a>
+        <a href="#login" className="nav-linkP">Login</a>
       </div>
     </nav>
     

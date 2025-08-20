@@ -79,7 +79,7 @@
   background-color: #e6a700;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .howitworks-columns {
     flex-direction: column;

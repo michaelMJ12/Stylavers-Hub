@@ -1,0 +1,348 @@
+/* Global Reset & Defaults */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100%;
+}
+
+/* Main Page Container */
+.purchase-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+header p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-tabs button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs button:hover {
+    color: #007bff;
+}
+
+.nav-tabs .active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Content Container */
+.content-container {
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Dual Section Layout */
+.dual-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 250px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.gray-bg {
+    background: #f4f4f4;
+}
+
+/* List Styling */
+.list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Buttons */
+.primary-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: #0056b3;
+}
+
+/* Help Text */
+.help-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.help-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.help-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    /* .purchase-page {
+        margin-left: 0;
+        padding: 15px;
+    } */
+      .purchase-page {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        margin-left: 200px;
+        margin-top: 200px;
+        margin-bottom: 490px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .purchase-page {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        margin-left: 100px;
+        margin-top: 100px;
+        margin-bottom: 250px;
+    }
+
+    .dual-section {
+        flex-direction: column;
+    }
+
+    .nav-tabs {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .content-container {
+        padding: 15px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .nav-tabs button {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .section {
+        min-width: 100%;
+        padding: 12px;
+    }
+
+    .primary-btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 10px;
+}
+
+/* Modal Card */
+.modal-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.3s ease-out;
+}
+
+.modal-card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.modal-card h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.modal-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.modal-card input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cancel-btn {
+  flex: 1;
+  background: #ccc;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #b3b3b3;
+}
+
+.process-btn {
+  flex: 1;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.process-btn:hover {
+  background: #0056b3;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Modal */
+@media (max-width: 480px) {
+  .modal-card {
+    padding: 20px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .process-btn {
+    width: 100%;
+  }
+}
+
+
+.close-icon {
+  position:absolute;
+  top: 12px;
+  right:10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+  color: #000;
+}
+

@@ -1,0 +1,132 @@
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* background: #f5f7fa; */
+    min-height: 100vh;
+    margin-left: 390px;
+}
+
+.payment-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+
+
+}
+
+.payout-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.payout-title span {
+    color: #4B13B0;
+}
+
+.payment-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.payment-dropdown {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.payment-dropdown:focus {
+    border: 1px solid #4B13B0;
+}
+
+.payment-info {
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.payment-btn {
+    background: #4B13B0;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.payment-btn:hover {
+    background: #360c84;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .payment-card {
+        margin-left:50px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+     .payment-card {
+        margin-left:8px;
+    }
+  
+    .payout-title {
+        font-size: 1.2rem;
+    }
+
+    .payment-btn {
+        width: 100%;
+    }
+
+
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px){
+
+    .payment-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        min-height: 100vh;
+        margin-left:100px;
+    }
+
+
+}

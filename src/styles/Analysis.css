@@ -1,4 +1,4 @@
-/* styles/Analysis.css */
+styles/Analysis.css
 
 * {
   margin: 0;
@@ -8,7 +8,6 @@
 
 html,
 body {
-  /* height: 100%; */
   width: 100%;
   overflow-x: hidden;
 }
@@ -16,7 +15,7 @@ body {
 .analysis-container {
   padding: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9fafb;
+  background-color: #0c0c0c;
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -32,10 +31,14 @@ body {
   flex-wrap: wrap;
 }
 
+.date-range {
+  margin-right: 100px;
+}
+
 .analysis-header h1 {
   font-size: 2rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #fff;
 }
 
 .analysis-header select {
@@ -46,7 +49,7 @@ body {
   outline: none;
 }
 
-.analytics-title {
+.analytics-titlep {
   margin-right: 150px;
 }
 
@@ -54,18 +57,20 @@ body {
 .metrics-cards {
   padding: 2.5rem;
   display: flex;
-  justify-content: center;
-  gap: 3.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 90px;
 }
 
 
 .metric-card {
-  background-color: #ffffff;
+  background-color: #FAFAD2;
   width: 200px;
   height: 100px;
   margin-bottom: 30px;
   text-align: center;
   padding-top: 20px;
+  border-radius: 20px;
 }
 
 
@@ -95,7 +100,6 @@ body {
 }
 
 
-
 .stat-icon {
   font-size: 2rem;
   color: #4b13b0;
@@ -117,10 +121,14 @@ body {
 .graph-card {
   margin-top: 3rem;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   width: 90%;
+}
+
+.graph-card h3 {
+  color: #fff;
 }
 
 .graph-title {
@@ -241,7 +249,7 @@ body {
 
 
   .date-range {
-    margin-right: 100px;
+    margin-right: 30px;
   }
 
 

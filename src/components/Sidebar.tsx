@@ -92,13 +92,13 @@ const Sidebar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/payouts" className="nav-item-link">
+            <Link to="/payout" className="nav-item-link">
               <CreditCard />
               <span>Payouts</span>
             </Link>
           </li>
           <li>
-            <Link to="/purchases" className="nav-item-link">
+            <Link to="/purchase" className="nav-item-link">
               <ShoppingCart />
               <span>My Purchases</span>
             </Link>
@@ -118,13 +118,13 @@ const Sidebar: React.FC = () => {
           )}
 
           <li>
-            <Link to="/learn" className="nav-item-link">
+            <Link to="" className="nav-item-link">
               <BookOpen />
               <span>Learn</span>
             </Link>
           </li>
           <li>
-            <Link to="/settings" className="nav-item-link">
+            <Link to="/setting" className="nav-item-link">
               <Settings />
               <span>Settings</span>
             </Link>

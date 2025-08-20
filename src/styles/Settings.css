@@ -1,0 +1,179 @@
+/* Root defaults */
+:root {
+  --primary-color: #4b13b0;
+  --primary-hover: #357abd;
+  --background-light: #f9fafb;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background-light);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Main container */
+.settings-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  margin-left: 200px;
+}
+
+/* Page title */
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Section styling */
+.section {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.section h3 {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Form grid layout */
+.form-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row select {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Checkbox styling */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+/* Submit buttons */
+.submit-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background: var(--primary-hover);
+}
+
+/* List of accounts */
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablet: two-column form layout */
+@media (min-width: 600px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small laptops and tablets in portrait */
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 15px;
+    margin-left:100px;
+  }
+  .page-title {
+    font-size: 1.75rem;
+  }
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .settings-container {
+    padding: 10px;
+    margin: 20px auto;
+    margin-left: 80px;
+  }
+  .page-title {
+    font-size: 1.5rem;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-row input,
+  .form-row select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 10px;
+    width: 100%;
+  }
+}

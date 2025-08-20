@@ -24,7 +24,7 @@
   color: #FFB800;
 }
 
-/* ✅ Mobile Responsiveness */
+
 @media (max-width: 768px) {
   .announcement-banner {
     padding: 1rem 1.25rem;

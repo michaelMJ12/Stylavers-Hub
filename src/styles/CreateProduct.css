@@ -1,11 +1,11 @@
-/* Reset all elements */
+/* 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Prevent horizontal scroll */
+
 body {
   overflow-x: hidden;
 }
@@ -80,7 +80,7 @@ body {
   color: #4B13B0;
 }
 
-/* Dropdown menu styling */
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -236,10 +236,10 @@ body {
   font-size: 0.5rem;
   cursor: pointer;
   color: #4B13B0;
-  /* position: fixed; */
+  
 }
 
-/* Base nav links styling (desktop default) */
+
 .nav-scroll-wrapper.closed .nav-links1 {
   display: none;
 }
@@ -262,7 +262,7 @@ body {
  
 }
 
-/* Responsive behavior */
+
 @media (max-width: 768px) {
   .nav-links1 {
     display: none !important;
@@ -310,4 +310,4 @@ body {
 
 .nav-scroll-wrapper{
   width: 150%;
-}
+} */

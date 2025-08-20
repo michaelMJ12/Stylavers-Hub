@@ -26,6 +26,7 @@ const Analysis: React.FC = () => {
   return (
     <div className="analysis-container">
       <div className="analysis-header">
+        <h1 className="analytics-title">Analytics Statistics</h1>
         <select className="date-range">
           <option>Today</option>
           <option>Last 7 days</option>
@@ -38,7 +39,6 @@ const Analysis: React.FC = () => {
           <option>Last 24 months</option>
           <option>Custom range</option>
         </select>
-        <h1 className="analytics-title">Analytics Statistics</h1>
       </div>
 
       <div className="metrics-cards">

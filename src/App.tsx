@@ -9,6 +9,10 @@ import ProductPickerDasboard from './components/CreateProductDashboard';
 import AnalysisDashboard from './components/AnalysisDashboard';
 import ListingDashboard from './components/ListingDashboard';
 import StoreDashboard from './components/StoreDashboard';
+import PayoutDashboard from './components/PayoutDashboard';
+import PaymentMethodDashboard from './components/PaymentMethodDashboard';
+import SettingDashboard from './components/SettingDashboard';
+import PurchaseDashboard from './components/PurchaseDashboard';
 
 
 
@@ -30,6 +34,10 @@ function App() {
         <Route path='/analytics' element={<AnalysisDashboard/>} />
         <Route path='/listing' element={<ListingDashboard/>} />
         <Route path='/store' element={<StoreDashboard/>}/>
+        <Route path='/payout' element={<PayoutDashboard/>} />
+        <Route path='/payment' element={<PaymentMethodDashboard/>} />
+        <Route path='/setting' element={<SettingDashboard/>} />
+        <Route path='/purchase' element={<PurchaseDashboard/>} />
       </Routes>
     </Router>
     </>
