@@ -7,7 +7,7 @@
   margin: 0; 
   box-sizing: border-box;
   overflow-x: hidden;
-  position: relative; 
+  position:relative; 
 }
 
 .announcement-banner h3 {
