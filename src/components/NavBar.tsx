@@ -22,7 +22,7 @@ const NavBar: React.FC = () => {
         <a href="/social" className="nav-linkP">Social integrations</a>
         <a href="/costume" className="nav-linkP">Custom stores</a>
         <a
-          href="#start-creating"
+          href="/dashboard"
           className="nav-linkP start-btn-hover"
           style={{
             backgroundColor: '#FFB800',
