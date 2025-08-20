@@ -65,7 +65,7 @@ html, body {
   }
 
   
-  .nav-links {
+  .nav-linksP {
     position: absolute;
     left: 0;
     right: 0;
@@ -81,12 +81,12 @@ html, body {
   }
 
   
-  .nav-links.show {
+  .nav-linksP.show {
     display: flex;
   }
 
   
-  .nav-links .nav-link {
+  .nav-linksP .nav-linkP {
     width: 100%;
     text-align: center;
     padding: 0.5rem 0;
